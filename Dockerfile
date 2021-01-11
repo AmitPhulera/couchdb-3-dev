@@ -108,7 +108,7 @@ RUN git clone $clone_url /usr/src/couchdb
 WORKDIR /usr/src/couchdb
 RUN ./configure -c --spidermonkey-version 60
 
-ARG checkout_branch=main
+ARG checkout_branch=3.1.1
 ARG configure_options="-c --spidermonkey-version 60"
 
 WORKDIR /usr/src/couchdb/
